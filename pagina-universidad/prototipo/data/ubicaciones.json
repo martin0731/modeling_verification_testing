@@ -1,0 +1,44 @@
+[
+  {
+    "nombre": "Edificio A",
+    "facultad": "Rectoría",
+    "latitud": 4.7489,
+    "longitud": -74.0891,
+    "descripcion": "Aulas 101-110"
+  },
+  {
+    "nombre": "Edificio B",
+    "facultad": "Ingeniería",
+    "latitud": 4.7490,
+    "longitud": -74.0892,
+    "descripcion": "Laboratorios de Cómputo"
+  },
+  {
+    "nombre": "Biblioteca Central",
+    "facultad": "Servicios",
+    "latitud": 4.7491,
+    "longitud": -74.0893,
+    "descripcion": "3 pisos, 50000 libros"
+  },
+  {
+    "nombre": "Cafetería",
+    "facultad": "Servicios",
+    "latitud": 4.7488,
+    "longitud": -74.0890,
+    "descripcion": "Zona de descanso"
+  },
+  {
+    "nombre": "Edificio C",
+    "facultad": "Facultad de Ciencias",
+    "latitud": 4.7492,
+    "longitud": -74.0894,
+    "descripcion": "Aulas 201-210"
+  },
+  {
+    "nombre": "Laboratorio de Sistemas",
+    "facultad": "Ingeniería",
+    "latitud": 4.7489,
+    "longitud": -74.0889,
+    "descripcion": "Equipos y software especializado"
+  }
+]

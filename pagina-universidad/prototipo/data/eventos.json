@@ -1,0 +1,238 @@
+{
+  "EVT001": {
+    "nombre": "Parcial IS201",
+    "fecha": "2026-02-20",
+    "tipo": "Examen",
+    "descripcion": "Examen de Programación Avanzada",
+    "usuarios": [
+      "juan.perez@universidad.edu",
+      "carlos.lopez@universidad.edu",
+      "luis.torres@universidad.edu",
+      "pablo.soto@universidad.edu",
+      "marcos.delgado@universidad.edu",
+      "alejandro.diaz@universidad.edu"
+    ]
+  },
+  "EVT002": {
+    "nombre": "Entrega Proyecto IS204",
+    "fecha": "2026-02-28",
+    "tipo": "Entrega",
+    "descripcion": "Proyecto final de Ingeniería de Software",
+    "usuarios": [
+      "juan.perez@universidad.edu",
+      "luis.torres@universidad.edu",
+      "marcos.delgado@universidad.edu"
+    ]
+  },
+  "EVT003": {
+    "nombre": "Parcial IS202",
+    "fecha": "2026-03-10",
+    "tipo": "Examen",
+    "descripcion": "Evaluación de Bases de Datos",
+    "usuarios": [
+      "juan.perez@universidad.edu",
+      "carlos.lopez@universidad.edu",
+      "luis.torres@universidad.edu"
+    ]
+  },
+  "EVT004": {
+    "nombre": "Reunión con Asesor",
+    "fecha": "2026-03-05",
+    "tipo": "Reunión",
+    "descripcion": "Seguimiento del semestre",
+    "usuarios": [
+      "juan.perez@universidad.edu"
+    ]
+  },
+  "EVT005": {
+    "nombre": "Examen Final IS203",
+    "fecha": "2026-03-20",
+    "tipo": "Examen",
+    "descripcion": "Evaluación final de Redes",
+    "usuarios": [
+      "juan.perez@universidad.edu",
+      "luis.torres@universidad.edu"
+    ]
+  },
+  "EVT006": {
+    "nombre": "Parcial CI501",
+    "fecha": "2026-02-25",
+    "tipo": "Examen",
+    "descripcion": "Examen de Cálculo Avanzado",
+    "usuarios": [
+      "maria.garcia@universidad.edu",
+      "diego.vargas@universidad.edu",
+      "david.reyes@universidad.edu",
+      "roberto.iglesias@universidad.edu"
+    ]
+  },
+  "EVT007": {
+    "nombre": "Laboratorio de Estructuras",
+    "fecha": "2026-03-15",
+    "tipo": "Práctica",
+    "descripcion": "Práctica de laboratorio estructural",
+    "usuarios": [
+      "maria.garcia@universidad.edu",
+      "diego.vargas@universidad.edu"
+    ]
+  },
+  "EVT008": {
+    "nombre": "Parcial IM401",
+    "fecha": "2026-02-22",
+    "tipo": "Examen",
+    "descripcion": "Examen de Cálculo II",
+    "usuarios": [
+      "rafael.castillo@universidad.edu",
+      "gabriel.fuentes@universidad.edu",
+      "jorge.rodriguez@universidad.edu",
+      "juan.acosta@universidad.edu"
+    ]
+  },
+  "EVT009": {
+    "nombre": "Evaluación de Laboratorio Mecánico",
+    "fecha": "2026-03-18",
+    "tipo": "Práctica",
+    "descripcion": "Evaluación de prácticas de laboratorio",
+    "usuarios": [
+      "rafael.castillo@universidad.edu",
+      "juan.acosta@universidad.edu"
+    ]
+  },
+  "EVT010": {
+    "nombre": "Parcial MD301",
+    "fecha": "2026-02-26",
+    "tipo": "Examen",
+    "descripcion": "Examen de Anatomía Humana III",
+    "usuarios": [
+      "elena.flores@universidad.edu",
+      "cecilia.herrera@universidad.edu"
+    ]
+  },
+  "EVT011": {
+    "nombre": "Práctica de Laboratorio Médico",
+    "fecha": "2026-03-12",
+    "tipo": "Práctica",
+    "descripcion": "Práctica en laboratorio clínico",
+    "usuarios": [
+      "elena.flores@universidad.edu",
+      "isabel.gomez@universidad.edu",
+      "cecilia.herrera@universidad.edu"
+    ]
+  },
+  "EVT012": {
+    "nombre": "Presentación Casos Clínicos",
+    "fecha": "2026-03-25",
+    "tipo": "Presentación",
+    "descripcion": "Presentación grupal de casos clínicos",
+    "usuarios": [
+      "elena.flores@universidad.edu",
+      "cecilia.herrera@universidad.edu"
+    ]
+  },
+  "EVT013": {
+    "nombre": "Parcial DR501",
+    "fecha": "2026-02-23",
+    "tipo": "Examen",
+    "descripcion": "Examen de Derecho Civil V",
+    "usuarios": [
+      "laura.sanchez@universidad.edu",
+      "andres.moreno@universidad.edu",
+      "sebastian.ribera@universidad.edu"
+    ]
+  },
+  "EVT014": {
+    "nombre": "Moot Court (Juicio Simulado)",
+    "fecha": "2026-03-22",
+    "tipo": "Simulación",
+    "descripcion": "Simulacro de juicio penal",
+    "usuarios": [
+      "laura.sanchez@universidad.edu",
+      "sebastian.ribera@universidad.edu"
+    ]
+  },
+  "EVT015": {
+    "nombre": "Taller de Derechos Humanos",
+    "fecha": "2026-03-08",
+    "tipo": "Taller",
+    "descripcion": "Taller práctico sobre derechos humanos",
+    "usuarios": [
+      "andres.moreno@universidad.edu",
+      "sebastian.ribera@universidad.edu"
+    ]
+  },
+  "EVT016": {
+    "nombre": "Parcial AD401",
+    "fecha": "2026-02-24",
+    "tipo": "Examen",
+    "descripcion": "Examen de Contabilidad Financiera",
+    "usuarios": [
+      "ana.martinez@universidad.edu",
+      "valentina.ruiz@universidad.edu",
+      "catalina.munoz@universidad.edu"
+    ]
+  },
+  "EVT017": {
+    "nombre": "Seminario de Emprendimiento",
+    "fecha": "2026-03-14",
+    "tipo": "Seminario",
+    "descripcion": "Charla con emprendedores exitosos",
+    "usuarios": [
+      "valentina.ruiz@universidad.edu",
+      "catalina.munoz@universidad.edu",
+      "blanca.estrada@universidad.edu"
+    ]
+  },
+  "EVT018": {
+    "nombre": "Parcial PS401",
+    "fecha": "2026-02-27",
+    "tipo": "Examen",
+    "descripcion": "Examen de Psicología General II",
+    "usuarios": [
+      "patricia.guerrero@universidad.edu",
+      "gloria.paredes@universidad.edu",
+      "francesca.silva@universidad.edu"
+    ]
+  },
+  "EVT019": {
+    "nombre": "Práctica de Observación Clínica",
+    "fecha": "2026-03-11",
+    "tipo": "Práctica",
+    "descripcion": "Observación de casos en contexto clínico",
+    "usuarios": [
+      "gloria.paredes@universidad.edu",
+      "patricia.guerrero@universidad.edu"
+    ]
+  },
+  "EVT020": {
+    "nombre": "Parcial CS401",
+    "fecha": "2026-03-02",
+    "tipo": "Examen",
+    "descripcion": "Examen de Teoría de la Comunicación",
+    "usuarios": [
+      "sofia.herrera@universidad.edu",
+      "martina.rojas@universidad.edu",
+      "mercedes.lara@universidad.edu"
+    ]
+  },
+  "EVT021": {
+    "nombre": "Producción de Documental Corto",
+    "fecha": "2026-03-21",
+    "tipo": "Proyecto",
+    "descripcion": "Realización de documental para clase",
+    "usuarios": [
+      "sofia.herrera@universidad.edu",
+      "mercedes.lara@universidad.edu"
+    ]
+  },
+  "EVT022": {
+    "nombre": "Exhibición de Proyectos Audiovisuales",
+    "fecha": "2026-03-28",
+    "tipo": "Exhibición",
+    "descripcion": "Muestra pública de trabajos audiovisuales",
+    "usuarios": [
+      "sofia.herrera@universidad.edu",
+      "martina.rojas@universidad.edu",
+      "mercedes.lara@universidad.edu"
+    ]
+  }
+}

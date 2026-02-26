@@ -1,0 +1,1076 @@
+{
+  "juan.perez@universidad.edu": {
+    "id": "2024001",
+    "nombre": "Juan Pérez",
+    "email": "juan.perez@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Ingeniería de Sistemas",
+    "semestre": 4,
+    "asignaturas": {
+      "IS201": {
+        "nombre": "Programación Avanzada",
+        "codigo": "IS201",
+        "creditos": 3,
+        "nota": 4.5
+      },
+      "IS202": {
+        "nombre": "Bases de Datos",
+        "codigo": "IS202",
+        "creditos": 3,
+        "nota": 4.2
+      },
+      "IS203": {
+        "nombre": "Redes de Computadores",
+        "codigo": "IS203",
+        "creditos": 3,
+        "nota": 4.8
+      },
+      "IS204": {
+        "nombre": "Ingeniería de Software",
+        "codigo": "IS204",
+        "creditos": 4,
+        "nota": 4.0
+      }
+    },
+    "eventos": [
+      "EVT001",
+      "EVT002",
+      "EVT003",
+      "EVT004",
+      "EVT005"
+    ]
+  },
+  "maria.garcia@universidad.edu": {
+    "id": "2024002",
+    "nombre": "María García",
+    "email": "maria.garcia@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Ingeniería Civil",
+    "semestre": 5,
+    "asignaturas": {
+      "CI501": {
+        "nombre": "Cálculo Avanzado",
+        "codigo": "CI501",
+        "creditos": 4,
+        "nota": 4.3
+      },
+      "CI502": {
+        "nombre": "Estructuras II",
+        "codigo": "CI502",
+        "creditos": 4,
+        "nota": 4.1
+      },
+      "CI503": {
+        "nombre": "Hidráulica",
+        "codigo": "CI503",
+        "creditos": 3,
+        "nota": 3.9
+      },
+      "CI504": {
+        "nombre": "Topografía",
+        "codigo": "CI504",
+        "creditos": 3,
+        "nota": 4.2
+      }
+    },
+    "eventos": [
+      "EVT006",
+      "EVT007"
+    ]
+  },
+  "carlos.lopez@universidad.edu": {
+    "id": "2024003",
+    "nombre": "Carlos López",
+    "email": "carlos.lopez@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Ingeniería de Sistemas",
+    "semestre": 3,
+    "asignaturas": {
+      "IS301": {
+        "nombre": "Algoritmos",
+        "codigo": "IS301",
+        "creditos": 3,
+        "nota": 4.6
+      },
+      "IS302": {
+        "nombre": "Estructuras de Datos",
+        "codigo": "IS302",
+        "creditos": 3,
+        "nota": 4.4
+      },
+      "IS303": {
+        "nombre": "Cálculo I",
+        "codigo": "IS303",
+        "creditos": 4,
+        "nota": 4.0
+      }
+    },
+    "eventos": [
+      "EVT001",
+      "EVT003"
+    ]
+  },
+  "ana.martinez@universidad.edu": {
+    "id": "2024004",
+    "nombre": "Ana Martínez",
+    "email": "ana.martinez@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Administración de Empresas",
+    "semestre": 4,
+    "asignaturas": {
+      "AD401": {
+        "nombre": "Contabilidad Financiera",
+        "codigo": "AD401",
+        "creditos": 3,
+        "nota": 4.2
+      },
+      "AD402": {
+        "nombre": "Gestión Empresarial",
+        "codigo": "AD402",
+        "creditos": 3,
+        "nota": 4.1
+      },
+      "AD403": {
+        "nombre": "Finanzas II",
+        "codigo": "AD403",
+        "creditos": 4,
+        "nota": 3.8
+      },
+      "AD404": {
+        "nombre": "Marketing Estratégico",
+        "codigo": "AD404",
+        "creditos": 3,
+        "nota": 4.3
+      }
+    },
+    "eventos": [
+      "EVT016"
+    ]
+  },
+  "jorge.rodriguez@universidad.edu": {
+    "id": "2024005",
+    "nombre": "Jorge Rodríguez",
+    "email": "jorge.rodriguez@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Ingeniería Mecánica",
+    "semestre": 6,
+    "asignaturas": {
+      "IM601": {
+        "nombre": "Termodinámica",
+        "codigo": "IM601",
+        "creditos": 4,
+        "nota": 4.4
+      },
+      "IM602": {
+        "nombre": "Mecánica de Materiales",
+        "codigo": "IM602",
+        "creditos": 4,
+        "nota": 4.2
+      },
+      "IM603": {
+        "nombre": "Máquinas Eléctricas",
+        "codigo": "IM603",
+        "creditos": 3,
+        "nota": 4.0
+      },
+      "IM604": {
+        "nombre": "Dinámica de Sistemas",
+        "codigo": "IM604",
+        "creditos": 3,
+        "nota": 4.1
+      }
+    },
+    "eventos": [
+      "EVT008"
+    ]
+  },
+  "laura.sanchez@universidad.edu": {
+    "id": "2024006",
+    "nombre": "Laura Sánchez",
+    "email": "laura.sanchez@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Derecho",
+    "semestre": 5,
+    "asignaturas": {
+      "DR501": {
+        "nombre": "Derecho Civil V",
+        "codigo": "DR501",
+        "creditos": 3,
+        "nota": 4.2
+      },
+      "DR502": {
+        "nombre": "Derecho Penal II",
+        "codigo": "DR502",
+        "creditos": 3,
+        "nota": 4.0
+      },
+      "DR503": {
+        "nombre": "Derecho Laboral",
+        "codigo": "DR503",
+        "creditos": 3,
+        "nota": 4.3
+      },
+      "DR504": {
+        "nombre": "Derecho Constitucional",
+        "codigo": "DR504",
+        "creditos": 4,
+        "nota": 4.1
+      }
+    },
+    "eventos": [
+      "EVT013",
+      "EVT014"
+    ]
+  },
+  "luis.torres@universidad.edu": {
+    "id": "2024007",
+    "nombre": "Luis Torres",
+    "email": "luis.torres@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Ingeniería de Sistemas",
+    "semestre": 4,
+    "asignaturas": {
+      "IS401": {
+        "nombre": "Programación Web",
+        "codigo": "IS401",
+        "creditos": 3,
+        "nota": 4.5
+      },
+      "IS402": {
+        "nombre": "Seguridad Informática",
+        "codigo": "IS402",
+        "creditos": 3,
+        "nota": 4.3
+      },
+      "IS403": {
+        "nombre": "Inteligencia Artificial",
+        "codigo": "IS403",
+        "creditos": 4,
+        "nota": 4.2
+      },
+      "IS404": {
+        "nombre": "Cálculo II",
+        "codigo": "IS404",
+        "creditos": 4,
+        "nota": 3.9
+      }
+    },
+    "eventos": [
+      "EVT001",
+      "EVT002",
+      "EVT003",
+      "EVT005"
+    ]
+  },
+  "elena.flores@universidad.edu": {
+    "id": "2024008",
+    "nombre": "Elena Flores",
+    "email": "elena.flores@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Medicina",
+    "semestre": 3,
+    "asignaturas": {
+      "MD301": {
+        "nombre": "Anatomía Humana III",
+        "codigo": "MD301",
+        "creditos": 4,
+        "nota": 4.4
+      },
+      "MD302": {
+        "nombre": "Fisiología II",
+        "codigo": "MD302",
+        "creditos": 4,
+        "nota": 4.2
+      },
+      "MD303": {
+        "nombre": "Farmacología",
+        "codigo": "MD303",
+        "creditos": 3,
+        "nota": 4.0
+      }
+    },
+    "eventos": [
+      "EVT010",
+      "EVT011",
+      "EVT012"
+    ]
+  },
+  "diego.vargas@universidad.edu": {
+    "id": "2024009",
+    "nombre": "Diego Vargas",
+    "email": "diego.vargas@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Ingeniería Civil",
+    "semestre": 2,
+    "asignaturas": {
+      "CI201": {
+        "nombre": "Cálculo I",
+        "codigo": "CI201",
+        "creditos": 4,
+        "nota": 4.1
+      },
+      "CI202": {
+        "nombre": "Geometría Descriptiva",
+        "codigo": "CI202",
+        "creditos": 3,
+        "nota": 3.8
+      },
+      "CI203": {
+        "nombre": "Física General I",
+        "codigo": "CI203",
+        "creditos": 4,
+        "nota": 4.2
+      }
+    },
+    "eventos": [
+      "EVT006",
+      "EVT007"
+    ]
+  },
+  "patricia.guerrero@universidad.edu": {
+    "id": "2024010",
+    "nombre": "Patricia Guerrero",
+    "email": "patricia.guerrero@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Psicología",
+    "semestre": 5,
+    "asignaturas": {
+      "PS501": {
+        "nombre": "Psicología Social",
+        "codigo": "PS501",
+        "creditos": 3,
+        "nota": 4.3
+      },
+      "PS502": {
+        "nombre": "Psicología Cognitiva",
+        "codigo": "PS502",
+        "creditos": 3,
+        "nota": 4.1
+      },
+      "PS503": {
+        "nombre": "Psicología Clínica",
+        "codigo": "PS503",
+        "creditos": 4,
+        "nota": 4.2
+      },
+      "PS504": {
+        "nombre": "Investigación en Psicología",
+        "codigo": "PS504",
+        "creditos": 3,
+        "nota": 4.0
+      }
+    },
+    "eventos": [
+      "EVT018",
+      "EVT019"
+    ]
+  },
+  "rafael.castillo@universidad.edu": {
+    "id": "2024011",
+    "nombre": "Rafael Castillo",
+    "email": "rafael.castillo@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Ingeniería Mecánica",
+    "semestre": 4,
+    "asignaturas": {
+      "IM401": {
+        "nombre": "Cálculo II",
+        "codigo": "IM401",
+        "creditos": 4,
+        "nota": 4.2
+      },
+      "IM402": {
+        "nombre": "Mecánica de Solidos",
+        "codigo": "IM402",
+        "creditos": 4,
+        "nota": 4.0
+      },
+      "IM403": {
+        "nombre": "Resistencia de Materiales",
+        "codigo": "IM403",
+        "creditos": 3,
+        "nota": 3.9
+      },
+      "IM404": {
+        "nombre": "Dibujo Técnico",
+        "codigo": "IM404",
+        "creditos": 2,
+        "nota": 4.3
+      }
+    },
+    "eventos": [
+      "EVT008",
+      "EVT009"
+    ]
+  },
+  "sofia.herrera@universidad.edu": {
+    "id": "2024012",
+    "nombre": "Sofía Herrera",
+    "email": "sofia.herrera@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Comunicación Social",
+    "semestre": 3,
+    "asignaturas": {
+      "CS301": {
+        "nombre": "Periodismo Digital",
+        "codigo": "CS301",
+        "creditos": 3,
+        "nota": 4.3
+      },
+      "CS302": {
+        "nombre": "Producción Audiovisual",
+        "codigo": "CS302",
+        "creditos": 3,
+        "nota": 4.2
+      },
+      "CS303": {
+        "nombre": "Semiótica",
+        "codigo": "CS303",
+        "creditos": 3,
+        "nota": 4.0
+      }
+    },
+    "eventos": [
+      "EVT020",
+      "EVT021",
+      "EVT022"
+    ]
+  },
+  "marcos.delgado@universidad.edu": {
+    "id": "2024013",
+    "nombre": "Marcos Delgado",
+    "email": "marcos.delgado@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Ingeniería de Sistemas",
+    "semestre": 5,
+    "asignaturas": {
+      "IS501": {
+        "nombre": "Procesamiento de Imágenes",
+        "codigo": "IS501",
+        "creditos": 3,
+        "nota": 4.4
+      },
+      "IS502": {
+        "nombre": "Machine Learning",
+        "codigo": "IS502",
+        "creditos": 4,
+        "nota": 4.5
+      },
+      "IS503": {
+        "nombre": "Sistemas Operativos",
+        "codigo": "IS503",
+        "creditos": 3,
+        "nota": 4.1
+      },
+      "IS504": {
+        "nombre": "Cálculo III",
+        "codigo": "IS504",
+        "creditos": 4,
+        "nota": 4.0
+      }
+    },
+    "eventos": [
+      "EVT001",
+      "EVT002"
+    ]
+  },
+  "valentina.ruiz@universidad.edu": {
+    "id": "2024014",
+    "nombre": "Valentina Ruiz",
+    "email": "valentina.ruiz@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Administración de Empresas",
+    "semestre": 6,
+    "asignaturas": {
+      "AD601": {
+        "nombre": "Dirección Estratégica",
+        "codigo": "AD601",
+        "creditos": 4,
+        "nota": 4.4
+      },
+      "AD602": {
+        "nombre": "Análisis Financiero",
+        "codigo": "AD602",
+        "creditos": 3,
+        "nota": 4.2
+      },
+      "AD603": {
+        "nombre": "Emprendimiento",
+        "codigo": "AD603",
+        "creditos": 3,
+        "nota": 4.3
+      },
+      "AD604": {
+        "nombre": "Recursos Humanos",
+        "codigo": "AD604",
+        "creditos": 3,
+        "nota": 4.1
+      }
+    },
+    "eventos": [
+      "EVT016",
+      "EVT017"
+    ]
+  },
+  "andres.moreno@universidad.edu": {
+    "id": "2024015",
+    "nombre": "Andrés Moreno",
+    "email": "andres.moreno@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Derecho",
+    "semestre": 4,
+    "asignaturas": {
+      "DR401": {
+        "nombre": "Derecho Civil IV",
+        "codigo": "DR401",
+        "creditos": 3,
+        "nota": 4.1
+      },
+      "DR402": {
+        "nombre": "Derecho Penal I",
+        "codigo": "DR402",
+        "creditos": 3,
+        "nota": 3.9
+      },
+      "DR403": {
+        "nombre": "Derecho Mercantil",
+        "codigo": "DR403",
+        "creditos": 3,
+        "nota": 4.2
+      },
+      "DR404": {
+        "nombre": "Teoría del Derecho",
+        "codigo": "DR404",
+        "creditos": 3,
+        "nota": 4.0
+      }
+    },
+    "eventos": [
+      "EVT013",
+      "EVT015"
+    ]
+  },
+  "isabel.gomez@universidad.edu": {
+    "id": "2024016",
+    "nombre": "Isabel Gómez",
+    "email": "isabel.gomez@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Medicina",
+    "semestre": 2,
+    "asignaturas": {
+      "MD201": {
+        "nombre": "Anatomía Humana I",
+        "codigo": "MD201",
+        "creditos": 4,
+        "nota": 4.3
+      },
+      "MD202": {
+        "nombre": "Fisiología I",
+        "codigo": "MD202",
+        "creditos": 4,
+        "nota": 4.2
+      },
+      "MD203": {
+        "nombre": "Biología Celular",
+        "codigo": "MD203",
+        "creditos": 3,
+        "nota": 4.1
+      }
+    },
+    "eventos": [
+      "EVT011"
+    ]
+  },
+  "david.reyes@universidad.edu": {
+    "id": "2024017",
+    "nombre": "David Reyes",
+    "email": "david.reyes@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Ingeniería Civil",
+    "semestre": 3,
+    "asignaturas": {
+      "CI301": {
+        "nombre": "Cálculo II",
+        "codigo": "CI301",
+        "creditos": 4,
+        "nota": 4.0
+      },
+      "CI302": {
+        "nombre": "Física General II",
+        "codigo": "CI302",
+        "creditos": 4,
+        "nota": 4.2
+      },
+      "CI303": {
+        "nombre": "Mecánica de Fluidos",
+        "codigo": "CI303",
+        "creditos": 3,
+        "nota": 3.8
+      }
+    },
+    "eventos": [
+      "EVT006"
+    ]
+  },
+  "gloria.paredes@universidad.edu": {
+    "id": "2024018",
+    "nombre": "Gloria Paredes",
+    "email": "gloria.paredes@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Psicología",
+    "semestre": 4,
+    "asignaturas": {
+      "PS401": {
+        "nombre": "Psicología General II",
+        "codigo": "PS401",
+        "creditos": 3,
+        "nota": 4.2
+      },
+      "PS402": {
+        "nombre": "Estadística",
+        "codigo": "PS402",
+        "creditos": 3,
+        "nota": 4.0
+      },
+      "PS403": {
+        "nombre": "Psicología del Desarrollo",
+        "codigo": "PS403",
+        "creditos": 3,
+        "nota": 4.1
+      },
+      "PS404": {
+        "nombre": "Métodos de Investigación",
+        "codigo": "PS404",
+        "creditos": 3,
+        "nota": 4.3
+      }
+    },
+    "eventos": [
+      "EVT018",
+      "EVT019"
+    ]
+  },
+  "juan.acosta@universidad.edu": {
+    "id": "2024019",
+    "nombre": "Juan Acosta",
+    "email": "juan.acosta@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Ingeniería Mecánica",
+    "semestre": 5,
+    "asignaturas": {
+      "IM501": {
+        "nombre": "Termodinámica Aplicada",
+        "codigo": "IM501",
+        "creditos": 3,
+        "nota": 4.2
+      },
+      "IM502": {
+        "nombre": "Manufactura",
+        "codigo": "IM502",
+        "creditos": 3,
+        "nota": 4.1
+      },
+      "IM503": {
+        "nombre": "Control Automático",
+        "codigo": "IM503",
+        "creditos": 3,
+        "nota": 4.0
+      },
+      "IM504": {
+        "nombre": "Diseño Mecánico",
+        "codigo": "IM504",
+        "creditos": 4,
+        "nota": 4.3
+      }
+    },
+    "eventos": [
+      "EVT008",
+      "EVT009"
+    ]
+  },
+  "mercedes.lara@universidad.edu": {
+    "id": "2024020",
+    "nombre": "Mercedes Lara",
+    "email": "mercedes.lara@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Comunicación Social",
+    "semestre": 6,
+    "asignaturas": {
+      "CS601": {
+        "nombre": "Cine y Documental",
+        "codigo": "CS601",
+        "creditos": 3,
+        "nota": 4.3
+      },
+      "CS602": {
+        "nombre": "Publicidad Multimedia",
+        "codigo": "CS602",
+        "creditos": 3,
+        "nota": 4.2
+      },
+      "CS603": {
+        "nombre": "Gestión de Medios",
+        "codigo": "CS603",
+        "creditos": 3,
+        "nota": 4.1
+      },
+      "CS604": {
+        "nombre": "Narrativa Digital",
+        "codigo": "CS604",
+        "creditos": 3,
+        "nota": 4.0
+      }
+    },
+    "eventos": [
+      "EVT020",
+      "EVT021",
+      "EVT022"
+    ]
+  },
+  "pablo.soto@universidad.edu": {
+    "id": "2024021",
+    "nombre": "Pablo Soto",
+    "email": "pablo.soto@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Ingeniería de Sistemas",
+    "semestre": 2,
+    "asignaturas": {
+      "IS201": {
+        "nombre": "Matemática Discreta",
+        "codigo": "IS201",
+        "creditos": 3,
+        "nota": 4.2
+      },
+      "IS202": {
+        "nombre": "Programación I",
+        "codigo": "IS202",
+        "creditos": 4,
+        "nota": 4.4
+      },
+      "IS203": {
+        "nombre": "Lógica Computacional",
+        "codigo": "IS203",
+        "creditos": 3,
+        "nota": 4.1
+      }
+    },
+    "eventos": [
+      "EVT001"
+    ]
+  },
+  "catalina.munoz@universidad.edu": {
+    "id": "2024022",
+    "nombre": "Catalina Muñoz",
+    "email": "catalina.munoz@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Administración de Empresas",
+    "semestre": 3,
+    "asignaturas": {
+      "AD301": {
+        "nombre": "Contabilidad I",
+        "codigo": "AD301",
+        "creditos": 3,
+        "nota": 4.0
+      },
+      "AD302": {
+        "nombre": "Economía General",
+        "codigo": "AD302",
+        "creditos": 3,
+        "nota": 3.9
+      },
+      "AD303": {
+        "nombre": "Gestión Administrativa",
+        "codigo": "AD303",
+        "creditos": 3,
+        "nota": 4.2
+      }
+    },
+    "eventos": [
+      "EVT016",
+      "EVT017"
+    ]
+  },
+  "sebastian.ribera@universidad.edu": {
+    "id": "2024023",
+    "nombre": "Sebastián Ribera",
+    "email": "sebastian.ribera@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Derecho",
+    "semestre": 5,
+    "asignaturas": {
+      "DR501": {
+        "nombre": "Derecho Internacional Público",
+        "codigo": "DR501",
+        "creditos": 3,
+        "nota": 4.2
+      },
+      "DR502": {
+        "nombre": "Derecho Administrativo",
+        "codigo": "DR502",
+        "creditos": 3,
+        "nota": 4.1
+      },
+      "DR503": {
+        "nombre": "Derechos Humanos",
+        "codigo": "DR503",
+        "creditos": 3,
+        "nota": 4.3
+      },
+      "DR504": {
+        "nombre": "Derecho Procesal Civil",
+        "codigo": "DR504",
+        "creditos": 3,
+        "nota": 4.0
+      }
+    },
+    "eventos": [
+      "EVT013",
+      "EVT014",
+      "EVT015"
+    ]
+  },
+  "cecilia.herrera@universidad.edu": {
+    "id": "2024024",
+    "nombre": "Cecilia Herrera",
+    "email": "cecilia.herrera@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Medicina",
+    "semestre": 4,
+    "asignaturas": {
+      "MD401": {
+        "nombre": "Patología General",
+        "codigo": "MD401",
+        "creditos": 4,
+        "nota": 4.3
+      },
+      "MD402": {
+        "nombre": "Microbiología",
+        "codigo": "MD402",
+        "creditos": 3,
+        "nota": 4.1
+      },
+      "MD403": {
+        "nombre": "Semiología Médica",
+        "codigo": "MD403",
+        "creditos": 4,
+        "nota": 4.2
+      },
+      "MD404": {
+        "nombre": "Bioquímica Clínica",
+        "codigo": "MD404",
+        "creditos": 3,
+        "nota": 4.0
+      }
+    },
+    "eventos": [
+      "EVT010",
+      "EVT011",
+      "EVT012"
+    ]
+  },
+  "roberto.iglesias@universidad.edu": {
+    "id": "2024025",
+    "nombre": "Roberto Iglesias",
+    "email": "roberto.iglesias@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Ingeniería Civil",
+    "semestre": 6,
+    "asignaturas": {
+      "CI601": {
+        "nombre": "Diseño de Estructuras",
+        "codigo": "CI601",
+        "creditos": 4,
+        "nota": 4.2
+      },
+      "CI602": {
+        "nombre": "Ingeniería Ambiental",
+        "codigo": "CI602",
+        "creditos": 3,
+        "nota": 4.0
+      },
+      "CI603": {
+        "nombre": "Proyectos de Infraestructura",
+        "codigo": "CI603",
+        "creditos": 4,
+        "nota": 4.1
+      },
+      "CI604": {
+        "nombre": "Geotecnia",
+        "codigo": "CI604",
+        "creditos": 3,
+        "nota": 4.3
+      }
+    },
+    "eventos": [
+      "EVT006"
+    ]
+  },
+  "francesca.silva@universidad.edu": {
+    "id": "2024026",
+    "nombre": "Francesca Silva",
+    "email": "francesca.silva@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Psicología",
+    "semestre": 2,
+    "asignaturas": {
+      "PS201": {
+        "nombre": "Psicología General I",
+        "codigo": "PS201",
+        "creditos": 3,
+        "nota": 4.1
+      },
+      "PS202": {
+        "nombre": "Biología del Comportamiento",
+        "codigo": "PS202",
+        "creditos": 3,
+        "nota": 4.2
+      },
+      "PS203": {
+        "nombre": "Historia de la Psicología",
+        "codigo": "PS203",
+        "creditos": 3,
+        "nota": 4.0
+      }
+    },
+    "eventos": [
+      "EVT018"
+    ]
+  },
+  "gabriel.fuentes@universidad.edu": {
+    "id": "2024027",
+    "nombre": "Gabriel Fuentes",
+    "email": "gabriel.fuentes@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Ingeniería Mecánica",
+    "semestre": 3,
+    "asignaturas": {
+      "IM301": {
+        "nombre": "Cálculo I",
+        "codigo": "IM301",
+        "creditos": 4,
+        "nota": 4.0
+      },
+      "IM302": {
+        "nombre": "Física General I",
+        "codigo": "IM302",
+        "creditos": 4,
+        "nota": 4.2
+      },
+      "IM303": {
+        "nombre": "Introducción a la Ingeniería",
+        "codigo": "IM303",
+        "creditos": 3,
+        "nota": 4.1
+      }
+    },
+    "eventos": [
+      "EVT008"
+    ]
+  },
+  "martina.rojas@universidad.edu": {
+    "id": "2024028",
+    "nombre": "Martina Rojas",
+    "email": "martina.rojas@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Comunicación Social",
+    "semestre": 4,
+    "asignaturas": {
+      "CS401": {
+        "nombre": "Teoría de la Comunicación",
+        "codigo": "CS401",
+        "creditos": 3,
+        "nota": 4.2
+      },
+      "CS402": {
+        "nombre": "Gestión de Redes Sociales",
+        "codigo": "CS402",
+        "creditos": 3,
+        "nota": 4.3
+      },
+      "CS403": {
+        "nombre": "Investigación de Medios",
+        "codigo": "CS403",
+        "creditos": 3,
+        "nota": 4.1
+      },
+      "CS404": {
+        "nombre": "Ética de la Comunicación",
+        "codigo": "CS404",
+        "creditos": 3,
+        "nota": 4.0
+      }
+    },
+    "eventos": [
+      "EVT020",
+      "EVT022"
+    ]
+  },
+  "alejandro.diaz@universidad.edu": {
+    "id": "2024029",
+    "nombre": "Alejandro Díaz",
+    "email": "alejandro.diaz@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Ingeniería de Sistemas",
+    "semestre": 5,
+    "asignaturas": {
+      "IS501": {
+        "nombre": "Cloud Computing",
+        "codigo": "IS501",
+        "creditos": 3,
+        "nota": 4.4
+      },
+      "IS502": {
+        "nombre": "Arquitectura de Software",
+        "codigo": "IS502",
+        "creditos": 4,
+        "nota": 4.3
+      },
+      "IS503": {
+        "nombre": "Desarrollo Móvil",
+        "codigo": "IS503",
+        "creditos": 3,
+        "nota": 4.2
+      },
+      "IS504": {
+        "nombre": "Álgebra Lineal",
+        "codigo": "IS504",
+        "creditos": 4,
+        "nota": 4.0
+      }
+    },
+    "eventos": [
+      "EVT001"
+    ]
+  },
+  "blanca.estrada@universidad.edu": {
+    "id": "2024030",
+    "nombre": "Blanca Estrada",
+    "email": "blanca.estrada@universidad.edu",
+    "contraseña": "password",
+    "facultad": "Administración de Empresas",
+    "semestre": 2,
+    "asignaturas": {
+      "AD201": {
+        "nombre": "Introducción a la Administración",
+        "codigo": "AD201",
+        "creditos": 3,
+        "nota": 4.2
+      },
+      "AD202": {
+        "nombre": "Economía Microeconómica",
+        "codigo": "AD202",
+        "creditos": 3,
+        "nota": 4.0
+      },
+      "AD203": {
+        "nombre": "Matemáticas Financieras",
+        "codigo": "AD203",
+        "creditos": 3,
+        "nota": 4.1
+      }
+    },
+    "eventos": [
+      "EVT017"
+    ]
+  }
+}
