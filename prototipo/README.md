@@ -1,120 +1,103 @@
-# Prototipo Sistema Universidad Web
-## Martin
-## Descripción
-Prototipo funcional en Python de la página de la universidad con:
-- 🔐 Login simple
-- 📄 Página de Inicio
-- 👤 Perfil del Estudiante (nombre, ID, email, asignaturas, notas)
-- 📅 Calendario (eventos académicos)
-- 🗺️ Mapa (ubicaciones de edificios)
+## Flask Web Prototype - University System
 
-Sin base de datos, todo local con datos en memoria.
+Web prototype for a **University Academic Management System**, built in Python using Flask.  
+It allows a student to log in, see a home page, consult their academic profile, review the calendar of events, and view a campus map.
 
-## Requisitos
-- Python 3.8+
-- Flask (para versión web)
-- Tkinter (para interfaz gráfica)
+### Technologies used
 
-## Instalación
+- **Language**: Python 3 (3.8+ recommended)
+- **Web framework**: Flask
+- **Frontend**:
+  - Bootstrap 5 (via CDN)
+  - Font Awesome (icons, via CDN)
+- **Data persistence**:
+  - JSON files (`estudiantes.json`, `ubicaciones.json`, `eventos.json`)
+- **Other**:
+  - Session management with `Flask.session`
+  - Basic layered structure: business logic vs. web layer
+
+### Project structure
+
+- **`run.py`**: recommended script to start the Flask server (**use this file**).
+- **`app.py`**: Flask application (routes and embedded HTML views for login, home, profile, calendar, and map).
+- **`src/`**: Python source code.
+  - **`src/__init__.py`**: marks the Python package.
+  - **`src/main.py`**: business logic:
+    - Classes `Estudiante`, `Ubicacion`.
+    - Class `SistemaUniversidad` (login, logout, profile, calendar, map, loading/saving JSON data).
+    - `main()` function to test the logic in the console (no web server).
+- **`data/`** (created automatically if it does not exist): JSON files with sample data.
+  - `estudiantes.json`
+  - `ubicaciones.json`
+  - `eventos.json`
+- **`static/`**: static assets.
+  - Campus map image (`Mapa-Parqueaderos-campus-general-2024-2.jpg.webp`) used in the map view.
+
+### UML diagrams
+
+This prototype is accompanied by **UML diagrams** that document the system design. The following six diagrams were created:
+
+1. **Use Case Diagram – Student Interaction with the System**  
+   Shows the main use cases for the student actor: logging in, viewing the home page, consulting the profile, checking the academic calendar, and viewing the campus map.
+
+2. **Class Diagram – Core Academic Domain**  
+   Describes the main classes (`Estudiante`, `Ubicacion`, `SistemaUniversidad`), their attributes, methods, and relationships (e.g., how a `SistemaUniversidad` aggregates students, events, and locations).
+
+3. **Sequence Diagram – Login Flow**  
+   Details the interaction between the browser, Flask application (`app.py`), and the business logic (`SistemaUniversidad.login`) when a user submits their email and password and receives either an error message or access to the system.
+
+4. **Sequence Diagram – View Student Profile**  
+   Shows the flow from the authenticated student requesting the `/perfil` route, through the Flask controller, to the `SistemaUniversidad.obtener_perfil` method, and back to the rendered HTML with academic information.
+
+5. **Activity Diagram – Academic Calendar Consultation**  
+   Represents the steps involved when the student accesses the calendar: verifying the session, loading event IDs, resolving them to event details from JSON, grouping them by date, and finally displaying them in the UI.
+
+6. **Component/Deployment Diagram – Web Prototype Architecture**  
+   Illustrates the high-level architecture: browser (client), Flask web server, business logic module (`src/main.py`), and the local JSON data storage, plus how static resources (CSS, JS, images) are served.
+
+The source files of these diagrams (e.g., from draw.io, Lucidchart, PlantUML, etc.) are intended to be stored under a directory such as:
+
+- `docs/diagrams/`
+
+and can be referenced in accompanying documentation or reports.
+
+### How to run the project
+
+1. **Clone or copy the project** to your local machine.
+2. **Install dependencies** (at least Flask):
+
+   ```bash
+   pip install flask
+   ```
+
+3. **Start the Flask server** from the project root:
+
+   ```bash
+   python run.py
+   ```
+
+4. Open your browser at:
+
+   - `http://localhost:9876`
+
+5. **Test credentials** (also shown in the HTML views):
+
+   - Email: `juan.perez@universidad.edu`
+   - Password: `password`
+
+### Testing the business logic (console mode)
+
+If you want to test only the business logic without running the web server, you can execute:
 
 ```bash
-# Clonar o descargar el proyecto
-cd prototipo
-
-# Instalar dependencias
-pip install flask
+python -m src.main
 ```
 
-## Estructura del Proyecto
+This runs the `main()` function in `src/main.py`, which performs basic checks of:
 
-```
-prototipo/
-├── README.md                 # Este archivo
-├── main.py                   # Script principal con lógica de negocio
-├── app.py                    # Aplicación Flask (versión web)
-└── gui.py                    # Interfaz gráfica con Tkinter (futuro)
-```
-
-## Uso
-
-### Opción 1: Ejecutar desde Terminal (CLI)
-```bash
-python main.py
-```
-
-### Opción 2: Ejecutar Aplicación Web (Flask)
-```bash
-python app.py
-# Luego abre: http://localhost:5000
-```
-
-### Opción 3: Interfaz Gráfica (Tkinter - Futuro)
-```bash
-python gui.py
-```
-
-## Datos Mock Incluidos
-
-### Estudiante
-- **Nombre**: Juan Pérez
-- **ID**: 2024001
-- **Email**: juan.perez@universidad.edu
-- **Facultad**: Ingeniería de Sistemas
-- **Semestre**: 4
-
-### Asignaturas
-1. Programación Avanzada - Calificación: 4.5
-2. Bases de Datos - Calificación: 4.2
-3. Redes de Computadores - Calificación: 4.8
-4. Ingeniería de Software - Calificación: 4.0
-
-### Eventos Calendario
-- Parcial 1 - 20 de Febrero
-- Entrega Proyecto - 28 de Febrero
-- Parcial 2 - 10 de Marzo
-
-### Ubicaciones Mapa
-- Edificio A: Aulas 101-110
-- Edificio B: Laboratorios
-- Edificio C: Biblioteca
-- Edificio D: Cafetería
-
-## Funcionalidades
-
-### Login
-- Email: `juan.perez@universidad.edu`
-- Contraseña: `password`
-
-### Componentes Disponibles
-- **Inicio**: Bienvenida
-- **Perfil**: Ver datos del estudiante
-- **Calendario**: Ver eventos académicos
-- **Mapa**: Ver ubicaciones
-- **Logout**: Cerrar sesión
-
-## API Endpoints (Flask)
-
-```
-POST   /login              - Autenticarse
-GET    /inicio             - Página de inicio
-GET    /perfil             - Ver perfil del estudiante
-GET    /calendario         - Ver calendario
-GET    /mapa              - Ver mapa
-POST   /logout            - Cerrar sesión
-```
-
-## Próximos Pasos
-
-1. ✅ Lógica de negocio (main.py) - HECHO
-2. ⏳ API Flask (app.py) - EN PROGRESO
-3. ⏳ Interfaz Gráfica (gui.py) - PENDIENTE
-4. ⏳ Integración con BD - PENDIENTE
-5. ⏳ Autenticación real - PENDIENTE
-
-## Notas
-
-- Todos los datos se almacenan en memoria (se pierden al cerrar)
-- La contraseña es texto plano (solo para prototipo)
-- No incluye validaciones de seguridad
-- Diseñado para propósitos educativos
+- Login
+- Home page information
+- Student profile
+- Events calendar
+- Campus locations
 

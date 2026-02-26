@@ -1,38 +1,39 @@
 """
 Prototipo Web con Flask - Sistema Universidad
 """
+
 ## Martin Estrada y Juan Andrés Correa
 from flask import Flask, request, session, redirect, url_for
-from main import SistemaUniversidad
-import os
+from src.main import SistemaUniversidad
 
-app = Flask(__name__, static_folder='static', static_url_path='/static')
-app.secret_key = 'clave_secreta_prototipo'
+app = Flask(__name__, static_folder="static", static_url_path="/static")
+app.secret_key = "clave_secreta_prototipo"
 
 # Iniciailizar sistema
 sistema = SistemaUniversidad()
 
 
-@app.route('/')
+@app.route("/")
 def index():
     """Página principal - redirigir a login"""
-    return redirect(url_for('login'))
+    return redirect(url_for("login"))
 
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route("/login", methods=["GET", "POST"])
 def login():
     """Página de login"""
-    if request.method == 'POST':
-        email = request.form.get('email')
-        contraseña = request.form.get('contraseña')
-        
+    if request.method == "POST":
+        email = request.form.get("email")
+        contraseña = request.form.get("contraseña")
+
         resultado = sistema.login(email, contraseña)
-        
-        if resultado['success']:
-            session['usuario'] = email
-            return redirect(url_for('inicio'))
+
+        if resultado["success"]:
+            session["usuario"] = email
+            return redirect(url_for("inicio"))
         else:
-            return f"""
+            return (
+                f"""
             <!DOCTYPE html>
             <html>
             <head>
@@ -48,7 +49,7 @@ def login():
                         <div class="col-md-5">
                             <div class="alert alert-danger text-center" role="alert">
                                 <h4 class="alert-heading">❌ Error de Autenticación</h4>
-                                <p>{resultado['mensaje']}</p>
+                                <p>{resultado["mensaje"]}</p>
                                 <a href="/login" class="btn btn-primary mt-3">Volver al Login</a>
                             </div>
                         </div>
@@ -56,8 +57,10 @@ def login():
                 </div>
             </body>
             </html>
-            """, 401
-    
+            """,
+                401,
+            )
+
     return """
     <!DOCTYPE html>
     <html lang="es">
@@ -217,14 +220,14 @@ def login():
     """
 
 
-@app.route('/inicio')
+@app.route("/inicio")
 def inicio():
     """Página de inicio"""
-    if 'usuario' not in session:
-        return redirect(url_for('login'))
-    
-    resultado = sistema.obtener_inicio(email=session['usuario'])
-    
+    if "usuario" not in session:
+        return redirect(url_for("login"))
+
+    resultado = sistema.obtener_inicio(email=session["usuario"])
+
     return f"""
     <!DOCTYPE html>
     <html lang="es">
@@ -338,8 +341,8 @@ def inicio():
         </nav>
 
         <div class="welcome-container">
-            <h1>{resultado['bienvenida']}</h1>
-            <p>{resultado['mensaje']}</p>
+            <h1>{resultado["bienvenida"]}</h1>
+            <p>{resultado["mensaje"]}</p>
         </div>
 
         <div class="menu-container">
@@ -386,27 +389,29 @@ def inicio():
     """
 
 
-@app.route('/perfil')
+@app.route("/perfil")
 def perfil():
     """Página de perfil"""
-    if 'usuario' not in session:
-        return redirect(url_for('login'))
-    
+    if "usuario" not in session:
+        return redirect(url_for("login"))
+
     resultado = sistema.obtener_perfil()
-    
-    if not resultado['success']:
+
+    if not resultado["success"]:
         return f"<h1>Error</h1><p>{resultado['mensaje']}</p>"
-    
-    perfil = resultado['perfil']
-    asignaturas_html = ''.join([
-        f"""<tr>
-            <td><strong>{a['nombre']}</strong></td>
-            <td><span class="badge bg-info">{a['creditos']}</span></td>
-            <td><span class="badge bg-success">{a['nota']}</span></td>
+
+    perfil = resultado["perfil"]
+    asignaturas_html = "".join(
+        [
+            f"""<tr>
+            <td><strong>{a["nombre"]}</strong></td>
+            <td><span class="badge bg-info">{a["creditos"]}</span></td>
+            <td><span class="badge bg-success">{a["nota"]}</span></td>
         </tr>"""
-        for a in perfil['asignaturas']
-    ])
-    
+            for a in perfil["asignaturas"]
+        ]
+    )
+
     return f"""
     <!DOCTYPE html>
     <html lang="es">
@@ -519,27 +524,27 @@ def perfil():
                 <div class="profile-info">
                     <div class="info-box">
                         <div class="info-box-label">Nombre</div>
-                        <div class="info-box-value">{perfil['nombre']}</div>
+                        <div class="info-box-value">{perfil["nombre"]}</div>
                     </div>
                     <div class="info-box">
                         <div class="info-box-label">ID Estudiante</div>
-                        <div class="info-box-value">{perfil['id']}</div>
+                        <div class="info-box-value">{perfil["id"]}</div>
                     </div>
                     <div class="info-box">
                         <div class="info-box-label">Semestre</div>
-                        <div class="info-box-value">{perfil['semestre']}</div>
+                        <div class="info-box-value">{perfil["semestre"]}</div>
                     </div>
                     <div class="info-box">
                         <div class="info-box-label">Promedio Académico</div>
-                        <div class="info-box-value">{perfil['promedio']}</div>
+                        <div class="info-box-value">{perfil["promedio"]}</div>
                     </div>
                 </div>
 
                 <hr style="margin: 30px 0;">
 
                 <div style="text-align: center;">
-                    <p><strong>📧 Email:</strong> {perfil['email']}</p>
-                    <p><strong>🏫 Facultad:</strong> {perfil['facultad']}</p>
+                    <p><strong>📧 Email:</strong> {perfil["email"]}</p>
+                    <p><strong>🏫 Facultad:</strong> {perfil["facultad"]}</p>
                 </div>
 
                 <div class="table-title">
@@ -571,49 +576,51 @@ def perfil():
     """
 
 
-@app.route('/calendario')
+@app.route("/calendario")
 def calendario():
     """Página de calendario"""
-    if 'usuario' not in session:
-        return redirect(url_for('login'))
-    
-    resultado = sistema.obtener_calendario(email=session['usuario'])
-    
-    if not resultado['success']:
+    if "usuario" not in session:
+        return redirect(url_for("login"))
+
+    resultado = sistema.obtener_calendario(email=session["usuario"])
+
+    if not resultado["success"]:
         return f"<h1>Error</h1><p>{resultado['mensaje']}</p>"
-    
+
     # Organizar eventos por fecha
     eventos_por_fecha = {}
-    for evento in resultado['eventos']:
-        fecha = evento['fecha']
+    for evento in resultado["eventos"]:
+        fecha = evento["fecha"]
         if fecha not in eventos_por_fecha:
             eventos_por_fecha[fecha] = []
         eventos_por_fecha[fecha].append(evento)
-    
+
     # Generar HTML de eventos agrupados por fecha
-    eventos_html = ''
+    eventos_html = ""
     for fecha in sorted(eventos_por_fecha.keys()):
         eventos_html += f'<div class="event-date-group"><h3 class="date-header"><i class="fas fa-calendar-check"></i> {fecha}</h3>'
         for evento in eventos_por_fecha[fecha]:
-            tipo_clase = evento['tipo'].lower().replace(' ', '-')
+            tipo_clase = evento["tipo"].lower().replace(" ", "-")
             icon_map = {
-                'examen': 'fa-pencil-alt',
-                'entrega': 'fa-file-upload',
-                'reunion': 'fa-users',
-                'evento': 'fa-star',
-                'otra': 'fa-circle'
+                "examen": "fa-pencil-alt",
+                "entrega": "fa-file-upload",
+                "reunion": "fa-users",
+                "evento": "fa-star",
+                "otra": "fa-circle",
             }
-            icon = next((v for k, v in icon_map.items() if k in tipo_clase), 'fa-circle')
-            eventos_html += f'''<div class="event-card event-{tipo_clase}">
+            icon = next(
+                (v for k, v in icon_map.items() if k in tipo_clase), "fa-circle"
+            )
+            eventos_html += f"""<div class="event-card event-{tipo_clase}">
                 <div class="event-icon"><i class="fas {icon}"></i></div>
                 <div class="event-content">
-                    <h4>{evento['nombre']}</h4>
-                    <p class="event-type"><span class="badge">{evento['tipo']}</span></p>
-                    <p class="event-description">{evento['descripcion']}</p>
+                    <h4>{evento["nombre"]}</h4>
+                    <p class="event-type"><span class="badge">{evento["tipo"]}</span></p>
+                    <p class="event-description">{evento["descripcion"]}</p>
                 </div>
-            </div>'''
-        eventos_html += '</div>'
-    
+            </div>"""
+        eventos_html += "</div>"
+
     return f"""
     <!DOCTYPE html>
     <html lang="es">
@@ -782,27 +789,29 @@ def calendario():
     """
 
 
-@app.route('/mapa')
+@app.route("/mapa")
 def mapa():
     """Página de mapa"""
-    if 'usuario' not in session:
-        return redirect(url_for('login'))
-    
+    if "usuario" not in session:
+        return redirect(url_for("login"))
+
     resultado = sistema.obtener_mapa()
-    
-    if not resultado['success']:
+
+    if not resultado["success"]:
         return f"<h1>Error</h1><p>{resultado['mensaje']}</p>"
-    
-    ubicaciones_html = ''.join([
-        f"""<tr>
-            <td><strong>{u['nombre']}</strong></td>
-            <td><span class="badge bg-danger">{u['facultad']}</span></td>
-            <td>{u['descripcion']}</td>
-            <td><small class="text-muted">{u['latitud']}, {u['longitud']}</small></td>
+
+    ubicaciones_html = "".join(
+        [
+            f"""<tr>
+            <td><strong>{u["nombre"]}</strong></td>
+            <td><span class="badge bg-danger">{u["facultad"]}</span></td>
+            <td>{u["descripcion"]}</td>
+            <td><small class="text-muted">{u["latitud"]}, {u["longitud"]}</small></td>
         </tr>"""
-        for u in resultado['ubicaciones']
-    ])
-    
+            for u in resultado["ubicaciones"]
+        ]
+    )
+
     return f"""
     <!DOCTYPE html>
     <html lang="es">
@@ -925,12 +934,12 @@ def mapa():
     """
 
 
-@app.route('/logout')
+@app.route("/logout")
 def logout():
     """Cerrar sesión"""
     resultado = sistema.logout()
-    session.pop('usuario', None)
-    
+    session.pop("usuario", None)
+
     return f"""
     <!DOCTYPE html>
     <html lang="es">
@@ -1003,7 +1012,7 @@ def logout():
             <div class="logout-icon">
                 <i class="fas fa-check-circle"></i>
             </div>
-            <h1>✓ {resultado['mensaje']}</h1>
+            <h1>✓ {resultado["mensaje"]}</h1>
             <p>Tu sesión ha sido cerrada correctamente</p>
             <a href="/login" class="btn-login">
                 <i class="fas fa-sign-in-alt"></i> Volver al Login

@@ -2,6 +2,7 @@
 """
 Script para ejecutar el servidor Flask - USAR ESTE ARCHIVO
 """
+
 import sys
 import os
 
@@ -20,4 +21,4 @@ if __name__ == "__main__":
     print("=" * 50)
     print("Presiona CTRL+C para detener el servidor")
     print("=" * 50)
-    app.run(debug=True, port=9876, host='127.0.0.1')
+    app.run(debug=True, port=9876, host="127.0.0.1")
